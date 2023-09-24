@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' media='screen' href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+<!-- start of main container -->
+    <div class="container-fluid" id="main_container">
+
+
+
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://www.demoapus-wp1.com/homeo/wp-content/uploads/2020/02/logo-white-2.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-list-ul" style="color: azure;"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Home 1</a></li>
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Properties
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#"> Properties 1</a></li>
+                      <li><a class="dropdown-item" href="#"> Properties 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"> Properties 3</a> </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link active light" aria-current="page" href="#">Contact</a>
+                  </li>
+                </ul>
+
+                <button class="btn btn-sm btn-secondary" type="button" id="Smallerbutton">+ Submit Proprty</button>
+                
+              </div>
+            </div>
+          </nav>
+<br> <br> <br>
+          <div class="row align-items-center mt-5">
+            <div class="col-6 display-5 mx-auto px-0 text-center" id="slogan">Find Your Dream Home</div>
+        </div>
+        <br> <br> <br>
+        <div class="row ">
+        <div class= "btn-group col-lg-2 col-md-3 col-sm-6 mx-sm-auto"  aria-label="Basic example" >
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Right</button>
+          </div>
+        </div>
+
+       <form class=" row align-items-center mx-auto mt-3 mb-0 " id="firstForm">
+        <div class="col-md-2 col-sm-6">
+          <label class="visually-hidden" for="specificSizeInputName">Enter Keywords...</label>
+          <input type="text" class="form-control" id="specificSizeInputName" placeholder="Enter Keywords...">
+        </div>
+        
+        <div class="col-md-2 col-sm-6">
+          <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+          <select class="form-select" id="specificSizeSelect">
+            <option selected>Property Type</option>
+            <option value="1">Apartment</option>
+            <option value="2">Condo</option>
+            <option value="3">Family House</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-sm-6">
+            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+            <select class="form-select" id="specificSizeSelect">
+              <option selected>Rooms</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+            </select>
+          </div>
+          <div class=" col-md-2 col-sm-6 action-location">
+		    <input type="text" name="filter-center-location" class="form-control" value="" id="ZW2Vk_center-location" placeholder="Location" autocomplete="off"><div class="leaflet-geocode-container"></div>
+		</div>
+        
+        <div class="col-md-3 col-sm-12 ms-md-auto ">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </form>
+    
+</div>
+<!-- end of main container -->
+
+<!-- Start of carousel  -->
+<div class="container">
+    <div class="row my-3 ">
+        <div class="col text-center">
+            <h3>Featured Properties</h3>
+            <p style="font-size: 10pt;">Handpicked properties by our team</p>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly my-3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class=" carousel-item active ">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                    <img src="./images/20.jpg" class="card-img-top" alt="...">
+                        <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                        <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                        <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                        <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                    <div class="card-body" >
+                        <p class="card-text ">Town House</p>
+                      <h6 class="card-text">Quality House For Sale</h6>
+                      <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                     <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                    </div >
+                    <div class="card-footer row bg-transparent align-items-center " >
+                        <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                        <p class="col-4 ms-auto">3 Years ago</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                    <img src="./images/20.jpg" class="card-img-top" alt="...">
+                        <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                        <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                        <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                        <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                    <div class="card-body" >
+                        <p class="card-text ">Town House</p>
+                      <h6 class="card-text">Quality House For Sale</h6>
+                      <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                     <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                    </div >
+                    <div class="card-footer row bg-transparent align-items-center " >
+                        <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                        <p class="col-4 ms-auto">3 Years ago</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                    <img src="./images/20.jpg" class="card-img-top" alt="...">
+                        <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                        <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                        <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                        <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                    <div class="card-body" >
+                        <p class="card-text ">Town House</p>
+                      <h6 class="card-text">Quality House For Sale</h6>
+                      <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                     <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                    </div >
+                    <div class="card-footer row bg-transparent align-items-center " >
+                        <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                        <p class="col-4 ms-auto">3 Years ago</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                    <img src="./images/20.jpg" class="card-img-top" alt="...">
+                        <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                        <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                        <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                        <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                    <div class="card-body" >
+                        <p class="card-text ">Town House</p>
+                      <h6 class="card-text">Quality House For Sale</h6>
+                      <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                     <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                    </div >
+                    <div class="card-footer row bg-transparent align-items-center " >
+                        <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                        <p class="col-4 ms-auto">3 Years ago</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 card mx-auto" id="slider_card" >
+                  <img src="./images/20.jpg" class="card-img-top" alt="...">
+                      <span class="position-absolute  ms-2 mt-2 badge rounded-pill bg-secondary ">For Sale</span>
+                      <h5 id="price" class="position-absolute ms-2  ">$ 1000</h5>
+                      <button id="love" class="  position-absolute " ><img src="./images/square-heart.png" alt=""></button>
+                      <button id="exchange" class="  position-absolute " ><img src="./images/exchange.png" alt=""></button>    
+                  <div class="card-body" >
+                      <p class="card-text ">Town House</p>
+                    <h6 class="card-text">Quality House For Sale</h6>
+                    <p class="card-text"><i class="fa-solid fa-location-dot fa-lg"></i> 5305&nbsp;&nbsp; NW 2nd Ave, Miami</p>
+                   <p class="card-text">Beds:4 &nbsp;&nbsp;&nbsp;&nbsp; Baths:1&nbsp;&nbsp;&nbsp;&nbsp;Sqft:120</p>
+                  </div >
+                  <div class="card-footer row bg-transparent align-items-center " >
+                      <p class="col-8"><img src="./images/person.jpeg" alt="" id="person_img"> Tom Harvy</p>
+                      <p class="col-4 ms-auto">3 Years ago</p>
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- End of carousel  -->
+
+<!-- start of cuntries -->
+<div class="container-fluid " style="background-color: rgb(255, 255, 255);">
+    <br>
+    <div class="row align-items-center text-center">
+        <div class="col ">
+            <h4>Find Properties in These Cities</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-3 col-sm-12 me-lg-3 me-md-3 " id="dubai">
+            <div class="row text-center  " id="text">
+            <h6>Dubai</h6>
+            <p>look</p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12  " id="newyork" >
+            <div class="row text-center  " id="text">
+                <h6>New York</h6>
+                <p>look</p>
+            </div>
+        </div>
+    </div> 
+    <div class="row justify-content-center mt-lg-3 mt-md-3">
+       
+        <div class="col-lg-6 col-md-6 col-sm-12 me-lg-3 me-md-3" id="newyork" >
+            <div class="row text-center  " id="text">
+                <h6>New York</h6>
+                <p>look</p>
+            </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-12 " id="dubai">
+            <div class="row text-center  " id="text">
+            <h6>Dubai</h6>
+            <p>look</p>
+        </div>
+        </div>
+    </div>
+   <br>
+</div>
+<!-- end of cuntries -->
+
+<div class="container my-4 ">
+    <div class="row align-items-center text-center my-3">
+        <div class="col ">
+            <h4>Why Choose Us</h4>
+            <span> We provide full service at every step</span>
+        </div>
+    </div>
+
+    <div class="row my-sm-3 justify-content-center">
+      <div class="col-lg-3 my-sm-3">
+        <div class="card" style=" height: 300px; transition: all 1s ease 0s;" id="card_hover">
+        <div class="col mx-auto card_icon" >
+            <i class="fa-solid fa-users-gear fa-2xl"></i>
+        </div>
+            <div class="card-body text-center">
+                <h4>Trusted By Thousands</h4>
+              <p style="margin-top: 35px;">
+                Some quick example text to build on the card title and make upSome 
+                quick example text to build on the card title and make up 
+            </p>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3 my-sm-3">
+      <div class="card" style=" height: 300px; transition: all 1s ease 0s;" id="card_hover">
+      <div class="col mx-auto card_icon" >
+          <i class="fa-solid fa-users-gear fa-2xl"></i>
+      </div>
+          <div class="card-body text-center">
+              <h4>Trusted By Thousands</h4>
+            <p style="margin-top: 35px;">
+              Some quick example text to build on the card title and make upSome 
+              quick example text to build on the card title and make up 
+          </p>
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-3 my-sm-3">
+    <div class="card" style=" height: 300px; transition: all 1s ease 0s;" id="card_hover">
+    <div class="col mx-auto card_icon" >
+        <i class="fa-solid fa-users-gear fa-2xl"></i>
+    </div>
+        <div class="card-body text-center">
+            <h4>Trusted By Thousands</h4>
+          <p style="margin-top: 35px;">
+            Some quick example text to build on the card title and make upSome 
+            quick example text to build on the card title and make up 
+        </p>
+        </div>
+      </div>
+</div>
+    
+       
+    </div>
+    
+</div>
+
+<!-- start of partners  -->
+<div class="container-fluid my-4" style="background-color: rgb(255, 255, 255); height: 200px; " id="parteners">
+
+  <div class="row align-items-center text-center my-3 py-3">
+    <div class="col ">
+        <h4>Our Partener</h4>
+        <span>We only work with the best companies around the globe</span>
+    </div>
+</div>
+
+    <div class="row justify-content-center my-lg-4 text-center">
+        <div class="col-lg-2 col-sm-2 "><img src="./images/brand01.png" alt="" id="brand"></div>
+        <div class="col-lg-2 col-sm-2"><img src="./images/brand03.png" alt="" id="brand"></div>
+        <div class="col-lg-2 col-sm-2"><img src="./images/brand06.png" alt="" id="brand" ></div>
+        <div class="col-lg-2 col-sm-2"><img src="./images/brand03.png" alt="" id="brand"></div>
+        <div class="col-lg-2 col-sm-2"><img src="./images/brand01.png" alt="" id="brand"></div>
+    </div>
+</div>
+<!-- end of partners  -->
+
+<!-- start of footer -->
+<div class="container-fluid py-lg-3" style="background-color: #ff5a5f;height: 100px; "  >
+    <div class="row text-center">
+        <div class="col-lg-6 " style="color: azure;">
+                <h5>Become a Real Estate Agent</h5>
+                <p>We only work with the best companies around the globe</p>
+            </div>
+        <div class="col-lg-6 my-md-auto ">
+          <button type="reset" class="btn" >Register Now</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #202040; color: azure;">
+  <div class="row pt-4 justify-content-center mx-lg-auto text-start">
+    <div class="col-lg-2">
+      <div class="row my-3">
+<h5>About Site</h5>
+      </div>
+      <div class="row my-3">
+        <p>We’re reimagining how you buy, sell and
+          rent. It’s now easier to get into a place you
+          love. So let’s do this, together
+        </p>
+      </div>
+      
+    </div>
+    <div class="col-lg-2">
+      <div class="row my-3">
+         <h5>Quick Links</h5>
+      </div>
+      <div class="row my-3">
+        <a class="fotLinc" href="#"><p>About Us</p></a>
+        <a class="fotLinc" href="#"><p>Terms & Conditions</p></a>
+        <a class="fotLinc" href="#"><p>User’s Guide</p></a>
+        <a class="fotLinc" href="#"><p>Press Info</p></a>
+      </div>
+     
+    </div>
+    <div class="col-lg-2">
+      <div class="row my-3"><h5>Contact Us</h5></div>
+      <div class="row my-3">
+        <p>Mr.kope@gmail.com</p>
+        <p>Collins Street West, Victoria
+          8007, Australia.</p>
+        <p>+020-12-088-60-962</p>
+        </div>
+      
+    </div>
+    <div class="col-lg-2">
+      <div class="row my-3"><h5>Follow us</h5></div>
+      <div class="row my-3">
+        <div class="col-2"><i class="fa-brands fa-facebook fa-lg"></i></div>
+        <div class="col-2"><i class="fa-brands fa-instagram fa-lg"></i></div>
+        <div class="col-2"><i class="fa-brands fa-twitter fa-lg"></i></div>
+        <div class="col-2"><i class="fa-brands fa-pinterest fa-lg"></i></div>
+        <div class="col-2"><i class="fa-brands fa-google fa-lg"></i></div>
+        <div class="col-2"><i class="fa-brands fa-tiktok fa-lg"></i></div>
+        
+        
+      </div>
+      <div class="row my-3">
+       <span> Subscribe</span>
+      </div> 
+      <form class=" row align-items-center my-3 " >
+        <div class="col-8">
+          <input type="text" class="form-control" id="specificSizeInputName" style="border-radius: 50px;" placeholder="Enter E-Mail">
+        </div>
+        <div class="col-4">
+          <button type="submit" class="btn btn-secondary" style="border-radius: 50px;"><i class="fa-solid fa-arrow-right fa-sm"></i></button>
+        </div>
+      </form>     
+
+      </div>
+      </div>
+      <br><br>
+  </div>
+   <div class="container-fluid" style="background-color: #1a1a38; color: azure;">
+<div class="row align-items-end">
+        <div class="col-md-6 col-sm-12">
+            <div class="row justify-content-center">
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Home</p></a></div>
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Listing</p></a></div>
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Prop</p></a></div>
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Pages</p></a></div>
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Blog</p></a></div>
+                <div class="col-md-1 col-sm-2"><a class="fotLinc" href="#"><p>Contact</p></a></div>
+            </div>
+        </div>
+     
+        <div class="col-md-3 col-sm-12 ms-auto mx-sm- me-2" style="color: burlywood;"><p>Mohamed Ashraf Ibrahim @ mr.kope</p></div>
+    </div>
+ </div>
+<!-- end of footer -->
+<button  id="backToTopBtn" class="btn btn-secondary"><i class="fa-solid fa-turn-up fa-lg"></i></button>
+
+
+
+<script src="./main.js"></script>
+<script src="./bootstrap.bundle.js"></script>
+</body>
+</html>
