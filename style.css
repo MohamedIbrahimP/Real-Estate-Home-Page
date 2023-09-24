@@ -47,7 +47,7 @@ li{
 /* ------------------------ */
 
 #main_container{ 
-    background-image:url(./images/village-279013_1920.jpg);
+    background-image:url(./Images/village-279013_1920.jpg);
     background-size:auto;
     height: 600px; 
 }
@@ -127,14 +127,14 @@ background-color: #ff5a5f;
 }
     
 #newyork{
-        background-image: url(./images/new\ york.jpg);
+        background-image: url(./Images/new\ york.jpg);
         border-radius: 5px;
        height: 180px;
        background-size:cover;
        transition: all 1s ease 0s;
 }
 #dubai{
-        background-image: url(./images/dubai.jpg);
+        background-image: url(./Images/dubai.jpg);
         background-size:cover;
         height: 180px;
         border-radius: 5px;
